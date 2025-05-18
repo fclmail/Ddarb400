@@ -89,7 +89,7 @@
             if (!signer) return;
             const tbody = document.querySelector("#resultsTable tbody");
             tbody.innerHTML = "";
-            const amountIn = ethers.parseUnits("100000", 6); // 10 USDC
+            const amountIn = ethers.parseUnits("10", 6); // 10 USDC
 
             for (let token of tokens) {
                 for (let buyRouter of routers) {
