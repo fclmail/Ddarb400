@@ -103,7 +103,7 @@
                         const sellPrice = await getPrice(sellRouter, token.address, usdc, tokenAmount);
                         if (sellPrice === 0) continue;
 
-                        const profit = sellPrice - 100000000000;
+                        const profit = sellPrice - 10;
                         const row = document.createElement("tr");
                         if (profit > 0) row.classList.add("profitable");
                         row.innerHTML = `
